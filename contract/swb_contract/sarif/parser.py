@@ -123,7 +123,8 @@ def _parse_result(run_idx: int, result_idx: int, result: dict, rules: list[Sarif
 
         if rule_Id is not None:
             selected_rule = [r for r in rules if r.rule_id == rule_Id]
-        else: selected_rule = []
+        else:
+            selected_rule = []
 
         if selected_rule:
             selected_rule = selected_rule[0]
